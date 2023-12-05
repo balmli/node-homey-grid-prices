@@ -148,7 +148,7 @@ export class GridPriceFetcher extends EventEmitter {
 
     private async onGridPrices(prices: GridSettingsConfig) {
         try {
-            this.emit('gridPrice', prices);
+            this.emit('gridPrices', prices);
         } catch (err) {
             this.logger.error(err);
         }
