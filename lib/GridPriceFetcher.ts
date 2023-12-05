@@ -88,7 +88,6 @@ export class GridPriceFetcher extends EventEmitter {
 
             const prices = await this.pricesFetchClient.fetchGridPrices(this.device, options);
             if (prices) {
-                this.emit('gridPrices', prices);
                 this.logger.verbose(`Grid Price Fetcher: fetched grid prices: ${prices?.id} ${prices?.description}`)
             } else {
                 this.logger.warn(`Grid Price Fetcher: no grid prices fetched for ${JSON.stringify(options)}`);
