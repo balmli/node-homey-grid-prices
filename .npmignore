@@ -1,0 +1,11 @@
+/.git
+/.vscode
+/.github
+/.idea
+/lib
+/tests
+/tests2
+/.editorconfig
+/.eslintrc.json
+/tsconfig.json
+/*.iml
