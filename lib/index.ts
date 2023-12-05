@@ -1,4 +1,4 @@
 export * from './types';
 export {GridPricesApi} from './GridPricesApi';
-export {PricesFetchClient} from './PricesFetchClient';
-export {PriceFetcher} from './PriceFetcher';
+export {GridPricesFetchClient} from './GridPricesFetchClient';
+export {GridPriceFetcher} from './GridPriceFetcher';

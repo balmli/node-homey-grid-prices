@@ -2,15 +2,15 @@ import EventEmitter from "events";
 
 import {Device} from "homey";
 
-import {PricesFetchClient} from "./PricesFetchClient";
-import {GridOptions, GridSettingsConfig, PriceFetcherOptions} from "./types";
+import {GridPricesFetchClient} from "./GridPricesFetchClient";
+import {GridOptions, GridSettingsConfig, GridPriceFetcherOptions} from "./types";
 
-export class PriceFetcher extends EventEmitter {
+export class GridPriceFetcher extends EventEmitter {
 
     private logger: any;
-    private pricesFetchClient: PricesFetchClient;
+    private pricesFetchClient: GridPricesFetchClient;
     private device: Device;
-    private priceFetcherOptions = new PriceFetcherOptions({});
+    private priceFetcherOptions = new GridPriceFetcherOptions({});
 
     private forcePriceUpdate?: boolean;
     private fetchTimeout?: NodeJS.Timeout;
@@ -19,7 +19,7 @@ export class PriceFetcher extends EventEmitter {
 
     constructor({logger, pricesFetchClient, device}: {
         logger: any,
-        pricesFetchClient: PricesFetchClient,
+        pricesFetchClient: GridPricesFetchClient,
         device: Device,
     }) {
         super();

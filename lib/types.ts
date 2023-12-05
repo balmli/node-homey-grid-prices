@@ -28,7 +28,7 @@ export interface GridOptions {
     gridCompany: string;
 }
 
-export class PriceFetcherOptions {
+export class GridPriceFetcherOptions {
     gridOptions?: GridOptions;
     fetchTime?: number; // Seconds in the hour to fetch data
 

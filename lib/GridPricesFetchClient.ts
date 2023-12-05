@@ -4,7 +4,7 @@ import {GridOptions, GridSettingsConfig} from "./types";
 
 const STORE_PREFIX = 'gridprices-';
 
-export class PricesFetchClient {
+export class GridPricesFetchClient {
 
     logger: any;
     gridPrices: GridPricesApi;
